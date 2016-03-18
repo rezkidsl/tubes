@@ -10,7 +10,7 @@ package javaapplication1;
  *
  * @author JOKER
  */
-public class pembimbing {
+public class pembimbing extends orang {
     public long no_hpDosen;
     public String ruangDosen;
 
@@ -21,6 +21,7 @@ public class pembimbing {
     public void setRuangDosen(String ruangDosen) {
         this.ruangDosen = ruangDosen;
     }
+    
     
     
 }
