@@ -11,5 +11,43 @@ package javaapplication1;
  * @author JOKER
  */
 public class mahasiswa extends orang{
+   public String kelasMhs;
+   public String jurusanMhs;
+   public String alamatMhs;
+   public long no_hpMhs;
+
+    public void setKelasMhs(String kelasMhs) {
+        this.kelasMhs = kelasMhs;
+    }
+
+    public void setJurusanMhs(String jurusanMhs) {
+        this.jurusanMhs = jurusanMhs;
+    }
+
+    public void setAlamatMhs(String alamatMhs) {
+        this.alamatMhs = alamatMhs;
+    }
+
+    public void setNo_hpMhs(long no_hpMhs) {
+        this.no_hpMhs = no_hpMhs;
+    }
+
+    public String getKelasMhs() {
+        return kelasMhs;
+    }
+
+    public String getJurusanMhs() {
+        return jurusanMhs;
+    }
+
+    public String getAlamatMhs() {
+        return alamatMhs;
+    }
+
+    public long getNo_hpMhs() {
+        return no_hpMhs;
+    }
    
+   
+    
 }
