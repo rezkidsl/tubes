@@ -15,9 +15,15 @@ public abstract class orang {
     public String id;
     public String email;
     public int jenis_user;
-    private String username;
     private String password;
 
+    public orang(String nama, String id, String email, int jenis_user) {
+        this.nama = nama;
+        this.id = id;
+        this.email = email;
+        this.jenis_user = jenis_user;
+    }
+    
     public void setNama(String nama) {
         this.nama = nama;
     }
@@ -34,9 +40,6 @@ public abstract class orang {
         this.jenis_user = jenis_user;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
 
     public void setPassword(String password) {
         this.password = password;
@@ -58,9 +61,6 @@ public abstract class orang {
         return jenis_user;
     }
 
-    public String getUsername() {
-        return username;
-    }
 
     public String getPassword() {
         return password;

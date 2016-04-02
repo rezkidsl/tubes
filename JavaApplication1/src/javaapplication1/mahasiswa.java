@@ -13,9 +13,15 @@ package javaapplication1;
 public class mahasiswa extends orang{
    public String kelasMhs;
    public String jurusanMhs;
-   public String alamatMhs;
    public long no_hpMhs;
 
+    public mahasiswa(String kelasMhs, String jurusanMhs, long no_hpMhs, String nama, String id, String email, int jenis_user) {
+        super(nama, id, email, jenis_user);
+        this.kelasMhs = kelasMhs;
+        this.jurusanMhs = jurusanMhs;
+        this.no_hpMhs = no_hpMhs;
+    }
+      
     public void setKelasMhs(String kelasMhs) {
         this.kelasMhs = kelasMhs;
     }
@@ -24,9 +30,6 @@ public class mahasiswa extends orang{
         this.jurusanMhs = jurusanMhs;
     }
 
-    public void setAlamatMhs(String alamatMhs) {
-        this.alamatMhs = alamatMhs;
-    }
 
     public void setNo_hpMhs(long no_hpMhs) {
         this.no_hpMhs = no_hpMhs;
@@ -40,9 +43,6 @@ public class mahasiswa extends orang{
         return jurusanMhs;
     }
 
-    public String getAlamatMhs() {
-        return alamatMhs;
-    }
 
     public long getNo_hpMhs() {
         return no_hpMhs;

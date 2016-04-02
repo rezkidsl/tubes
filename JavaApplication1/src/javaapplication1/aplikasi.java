@@ -10,7 +10,9 @@ package javaapplication1;
  *
  * @author JOKER
  */
+import java.util.*;
 public class aplikasi {
+    Scanner scan = new Scanner(System.in);
     public int bykpembimbing=0;
     public int bykmhs=0;
     public int byklokasi;
@@ -46,9 +48,47 @@ public class aplikasi {
             }
         }
    }
-   
-   public void registarasi(){
+   public void menuadmin(){
+       System.out.println("1. Login");
+       System.out.println("2. Kembali");
+       int pil = scan.nextInt();
+       switch(pil){
+           case 1:
+           case 2:menudepan();
+               break;
+       }
+   }
+   public void menulogin(int i){
        
+       if(i==1){
+           System.out.println("no id  : ");
+       }
+           String id = scan.nextLine();
+       if (i==1){
+           if (id == null){
+               menulogin(i);
+           }
+           else{
+               if( this.getMahasiswa(id) != null){
+               this.panelMahasiswa(this.getMahasiswa(id))
+             }
+           }
+       }
+       if(i==2){
+           
+       }
+   }
+   
+   public void menudepan(){
+       System.out.println("1. Menu Mahasiswa");
+       System.out.println("2. Menu Admin");
+       int pil = scan.nextInt();
+       switch(pil){
+           case 1:menumahasiswa();
+                break;
+           case 2:menuadmin();
+               break;
+       }
    }
    public void loginmhs(){
        
