@@ -43,9 +43,9 @@ public class kelompok {
         }
         return null;
     }
-    public void removeanggota(String name){
+    public void removeanggota(String id){
         for(int i=0; i < anggota.length; i++){
-            if ( anggota[i].nama == name ){
+            if ( anggota[i].id == id ){
                 for (int j=i; j < anggota.length; j++){
                     anggota[j] = anggota[j+1];
                 }

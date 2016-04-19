@@ -36,9 +36,9 @@ public class lokasi {
         return kuotaMax;
     }
 
-    public void createkelompok (kelompok k){
+    public void createkelompok(String nama){
         int i=0;
-        Kelompok[i]=k;
+        Kelompok[i].namaKelompok = nama;
         i++;
     }
     public kelompok getKelompokbyIdx(int n){
@@ -56,3 +56,30 @@ public class lokasi {
   
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
